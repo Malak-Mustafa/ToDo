@@ -2,7 +2,7 @@ var theInput = document.querySelector(".addTask input");
 var theAddButton = document.querySelector(".addTask .addBtn");
 
 window.onload = function () {
-  // ما حد بحط بداية اسم المتغيير the
+  
     theInput.focus();
 };
 
@@ -26,12 +26,7 @@ theAddButton.onclick = function () {
         var P=document.createElement("p");
          P.innerText=theInput.value;
          div.appendChild(P);
-        //var t = document.createTextNode(theInput.value);
-        //li.appendChild();
-
-       /* li.onclick=function(){
-            li.contentEditable=true;
-        }*/
+       
 
         var tasksHolder =document.querySelector(".tasksList")
       
@@ -56,6 +51,7 @@ theAddButton.onclick = function () {
 
         editButton.onclick=function(){
             P.contentEditable=true;
+            P.focus();
         }
 
 
